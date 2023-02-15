@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+.hero {
+    background-color: #20484F;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    .right {
+        color: white;
+
+        p:first-child {
+            font-size: 15px;
+        }
+
+        .txt {
+            margin: 2rem 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        form {
+            position: relative;
+
+            input {
+                font-size: 20px;
+                padding: 10px;
+                width: 70%;
+                border-radius: 10px 0 0 10px;
+                border: none;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            button {
+                padding: 14px 2rem;
+                position: absolute;
+                right: 54px;
+                border-radius: 0 10px 10px 0;
+                border: none;
+                background-color: #B8E4DA;
+            }
+        }
+    }
+
+    .left {
+        .circle {
+            min-height: 350px;
+            width: 280px;
+            background: #DBF1EC;
+            border-radius: 50%;
+            margin: auto;
+            position: relative;
+
+            .post1 {
+                height: 300px;
+                width: 230px;
+                background-color: white;
+                position: absolute;
+                left: -30%;
+                top: -20%;
+                border-radius: 15px;
+                padding: 1rem;
+                i{
+                    border-radius: 50%;
+                    text-align: center;
+                    height: 28px;
+                    width: 28px;
+                    background-color: #DBF1EC;
+                    padding: 5px;
+                }
+                .line{
+                    height: 14px;
+                    background-color: gray;
+                    border-radius: 15px;
+                }
+            }
+
+            .post2 {
+                height: 200px;
+                width: 170px;
+                background-color: white;
+                position: absolute;
+                right: -25%;
+                top: 15%;
+                border-radius: 15px;
+            }
+            .post3{
+                height: 135px;
+                width: 350px;
+                background-color: white;
+                position: absolute;
+                left: -50%;
+                bottom: -20%;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .circle,.post1,.post2,.post3{
+        position: static !important;
+        width: 100% !important;
+        margin: 2rem 0;
+
+    }
+   
+    .circle{
+        background: transparent !important;
+    }
+    
+}
